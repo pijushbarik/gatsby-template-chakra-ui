@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-
+import Helmet from "react-helmet";
 import Header from "./Header";
 import { Container } from "@chakra-ui/react";
 import Footer from "./Footer";
@@ -21,6 +21,18 @@ const Layout: React.FC<LayoutProps> = props => {
 
   return (
     <>
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Container maxW="container.xl" width="95%">
         <motion.main
