@@ -38,10 +38,10 @@ module.exports = {
       options: {
         components: path.join(__dirname, "src/components"),
         assets: path.join(__dirname, "src/assets"),
+        theme: path.join(__dirname, "src/theme"),
       },
     },
     `gatsby-plugin-image`,
     `gatsby-background-image`,
-    `@chakra-ui/gatsby-plugin`,
   ],
 };
