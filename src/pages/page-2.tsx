@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, PageProps } from "gatsby";
 
-import Layout from "components/Layout";
 import SEO from "components/SEO";
 
 const SecondPage: React.FC<PageProps> = () => (
