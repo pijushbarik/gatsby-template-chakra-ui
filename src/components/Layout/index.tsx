@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = props => {
       <Container maxW="container.xl" width="95%" paddingBlock="5">
         <main>{props.children}</main>
       </Container>
-      <Footer />
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   );
 };
