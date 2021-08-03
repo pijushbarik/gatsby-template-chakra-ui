@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Container, Flex, Spacer } from "@chakra-ui/react";
+import { Flex, Spacer } from "@chakra-ui/react";
 import Navigation from "./Navigation";
 import * as Styled from "./styles";
 import { StaticImage } from "gatsby-plugin-image";
+import Container from "components/ui/Container";
 
 type HeaderProps = {
   siteTitle: string;
@@ -12,7 +13,7 @@ type HeaderProps = {
 const Header: React.FC<HeaderProps> = props => {
   return (
     <Styled.Header>
-      <Container w="95%" maxW="container.xl" paddingBlock="5" paddingInline="4">
+      <Container fluid paddingInline="4" paddingBlock="5">
         <Flex alignItems="center">
           <Flex alignItems="center">
             <StaticImage

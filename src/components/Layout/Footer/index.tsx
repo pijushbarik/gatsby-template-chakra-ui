@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Grid, Box, HStack, VStack } from "@chakra-ui/react";
+import { Grid, Box, HStack, VStack } from "@chakra-ui/react";
 import * as Styled from "./styles";
+import Container from "components/ui/Container";
 
 type FooterProps = {
   siteTitle: string;
@@ -9,7 +10,7 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = props => {
   return (
     <Styled.Footer>
-      <Container width="95%" maxW="container.xl">
+      <Container fluid>
         <VStack spacing="2.5rem">
           <Grid gap={6} templateColumns="repeat(3, 1fr)" w="100%">
             <Styled.SiteTitle>{props.siteTitle}</Styled.SiteTitle>
