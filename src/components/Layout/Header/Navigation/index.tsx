@@ -26,8 +26,11 @@ const Navigation: React.FC = () => {
   return (
     <nav>
       <Styled.NavigationList>
-        {navigationItems.map(item => (
-          <motion.li whileTap={{ scale: 0.9 }}>
+        {navigationItems.map((item, i) => (
+          <motion.li
+            key={`navigation-menu-item-${i}`}
+            whileTap={{ scale: 0.9 }}
+          >
             <Styled.NavigationItem
               to={item.slug}
               key={item.slug}
