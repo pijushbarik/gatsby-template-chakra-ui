@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 
 type CarouselProps = {
   slickSettings: Settings;
+  children: React.ReactNode;
 };
 
 const Carousel: React.FC<CarouselProps> = props => {
