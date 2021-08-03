@@ -38,6 +38,7 @@ const Layout: React.FC<LayoutProps> = props => {
         animate={{ y: 0, opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ delay: 0.2 }}
+        style={{ overflow: "hidden auto" }}
       >
         {props.children}
       </motion.main>
